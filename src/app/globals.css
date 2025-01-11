@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.michroma{
+ font-family: var(--font-michroma) !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components{
+ .image {
+  @apply bg-center bg-no-repeat bg-cover select-none
+ }
+ .heading-xl {
+  @apply xl:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl
+ }
+ .heading-lg {
+  @apply xl:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl
+ }
+ .heading-md {
+  @apply  md:text-2xl sm:text-xl xs:text-xl text-lg
+ }
+ .para{
+  @apply text-base md:text-lg lg:text-xl xl:text-2xl font-light text-[#C5C6C5]
+ }
 }
