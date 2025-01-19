@@ -7,7 +7,7 @@ export default function Blog({title,text,badgeText,border=false,img,order=0}) {
      <div className={`${order>0? 'md:order-2' : 'order-1' } flex flex-col gap-3 md:max-w-[50%] md:items-start items-center `}>
     {badgeText&&<span className='flex gap-2 items-center rounded-lg border border-[#464646] py-1 ps-2.5 pe-3.5 w-fit uppercase text-sm bg-gradient-to-b from-[#1F1F23] to-[#2E2D35]'>
               <Image
-                src={'/whyUS.png'}
+                src={'/whyUs.png'}
                 alt=''
                 quality={100}
                 height={28}

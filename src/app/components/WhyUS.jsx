@@ -73,7 +73,7 @@ export default function WhyUS({title,text,whyUSArray}) {
       <aside className='lg:order-2 order-1 lg:sticky top-[12vh]  flex flex-col lg:items-start items-center gap-5 max-w-[620px] lg:max-w-[500px] px-5  lg:text-start text-center h-fit '>
         <span className='flex gap-2 items-center rounded-lg border border-[#464646] py-1 ps-2.5 pe-3.5 w-fit uppercase text-sm bg-gradient-to-b from-[#1F1F23] to-[#2E2D35]'>
           <Image
-            src={'/whyUS.png'}
+            src={'/whyUs.png'}
             alt=''
             quality={100}
             height={28}

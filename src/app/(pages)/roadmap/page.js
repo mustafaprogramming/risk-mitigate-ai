@@ -31,11 +31,11 @@ export default function RoadmapPage() {
         <span className='heading-md michroma text-black bg-[#01F2A7] rounded-[40px] py-1 md:py-2 px-5 sm:px-10 md:px-16 lg:px-20'>
           2026 Goals
         </span>
-        <div className='grid md:grid-cols-2 gap-6  mx-4 sm:mx-20 my-3 '>
+        <div className='grid md:grid-cols-2 gap-6  mx-4 lg:mx-40 md:mx-28 sm:mx-20 my-3 '>
           {futureGoal.map(({icon,id,title,desc}) => {
             return (
               <article key={id} className=' md:rounded-bl-none rounded-2xl border border-[#333333] bg-gradient-to-b  from-[rgb(55,59,63,0.63)] to-[rgb(11,14,18,0.82)] flex flex-col sm:gap-4 gap-2 px-4 py-5'>
-                <span className='bg-[#29282D] border-2 border-[#353539] flex w-[60px] md:w-[80px] rounded-lg h-[60px] md:h-[80px] items-center justify-center text-4xl md:text-6xl '>
+                <span className='bg-[#29282D] border-2 border-[#353539] flex w-[60px] md:w-[70px] rounded-lg h-[60px] md:h-[70px] items-center justify-center text-4xl md:text-6xl '>
                   {icon}
                 </span>
                 <h5 className='font-semibold text-[#01F2A7] text-base sm:text-lg lg:text-xl'>{title}</h5>
