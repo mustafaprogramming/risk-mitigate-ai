@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 const poppins = Poppins({
   variable: "--font-Poppins",
   subsets: ["latin"],
-  weight:["400"]
+  weight:["400",'500',"600",'700']
 });
 import { Michroma } from "next/font/google";
 const michroma = Michroma({

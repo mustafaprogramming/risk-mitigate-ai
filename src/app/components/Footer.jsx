@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 //data
-import { contactLinks, links, socialLinks } from '../data'
+import { usefulLinks, links, socialLinks } from '../data'
 
 export default function Footer() {
   const pathname = usePathname()
@@ -39,7 +39,7 @@ export default function Footer() {
               <li
                 key={ind}
                 className={` ${
-                  pathname === link ? 'text-[#ffffff]' : 'hover:text-white'
+                  pathname === link ? 'text-[#01f2a6]' : 'hover:text-[#01f2a650]'
                 } capitalize`}
               >
                 <Link href={link}>{text}</Link>
@@ -50,11 +50,11 @@ export default function Footer() {
             <li>
               <h4 className='text-lg font-semibold text-white text-nowrap'>Useful Links</h4>
             </li>
-            {contactLinks.map(({ text, link },ind) => (
+            {usefulLinks.map(({ text, link },ind) => (
               <li
                 key={ind}
                 className={` ${
-                  pathname === link ? 'text-[#ffffff]' : 'hover:text-white'
+                  pathname === link ? 'text-[#01f2a6]' : 'hover:text-[#01f2a650]'
                 } capitalize`}
               >
                 <Link href={link}>{text}</Link>
@@ -68,16 +68,14 @@ export default function Footer() {
             {socialLinks.map(({ text, link, icon },ind) => (
               <li
                 key={ind}
-                className={` ${
-                  pathname === link ? 'text-[#ffffff]' : 'hover:text-white' 
-                } capitalize`}
+                className={` hover:text-[#01f2a650] capitalize`}
               >
-                <Link href={link} className='flex gap-3 items-center'>
+                <a target='_blank' href={link} className='flex gap-3 items-center'>
                   <span className='p-1 border border-[#393938] rounded-full text-[#01F2A7] text-xl'>
                     {icon}
                   </span>
                   {text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

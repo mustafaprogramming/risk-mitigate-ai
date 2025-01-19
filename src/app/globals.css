@@ -15,10 +15,21 @@
  .heading-lg {
   @apply xl:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl
  }
+ .heading-ml {
+  @apply  lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl text-lg
+ }
  .heading-md {
   @apply  md:text-2xl sm:text-xl xs:text-xl text-lg
  }
  .para{
   @apply text-base md:text-lg lg:text-xl xl:text-2xl font-light text-[#C5C6C5]
  }
+}
+
+::-webkit-scrollbar{
+ width: 7px;
+ height: 7px;
+}
+::-webkit-scrollbar-thumb{
+ background-color: #39383c;
 }

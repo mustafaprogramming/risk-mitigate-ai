@@ -3,12 +3,11 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 //conponents
 import Button from './Button'
-//data
-import { whyUSArray } from '../data'
 
 
 
-export default function WhyUS() {
+
+export default function WhyUS({title,text,whyUSArray}) {
  const [activeSection, setActiveSection] = useState('')
  useEffect(() => { 
   const timeout = setTimeout(() => {
@@ -49,7 +48,7 @@ export default function WhyUS() {
 
 
   return (
-    <section id='why-us' className='flex lg:flex-row flex-col gap-10 items-center lg:items-start md:my-20  my-10 relative  max-w-[1200px] mx-auto '>
+    <section id='why-us' className='flex lg:flex-row flex-col gap-10 justify-center items-center lg:items-start md:my-20  my-10 relative  max-w-[1200px] mx-auto sm:px-6 '>
       <div className='flex lg:order-1 lg:w-[50%] sm:mx-10 mx-4 lg:mx-0 order-2 flex-col gap-8'>
       {whyUSArray.map((why) => {
             return (
@@ -83,10 +82,9 @@ export default function WhyUS() {
           />
           benefits
         </span>
-        <h2 className={` heading-lg michroma `}>Why Choose RiskMitigateAI?</h2>
+        <h2 className={` heading-lg michroma `}>{title}</h2>
         <p className='text-[#C5C6C5] lg:text-xl '>
-          Discover the key benefits that set us apart in delivering smarter risk
-          management solutions for lending platforms.
+          {text}
         </p>
         <Button link='/sign-in'>get started</Button>
       </aside>

@@ -57,27 +57,27 @@ export default function Header() {
       <div
         className={`${
           sideBar ? 'w-full' : 'w-0'
-        } fixed top-0 left-0 bg-black/30 backdrop-blur-md  h-screen md:hidden transition-all duration-500  z-[49] bg-[#01f2a604] border-r border-[#29282d]`}
+        } fixed top-0 left-0  backdrop-blur-md  h-screen md:hidden transition-all duration-500  z-[49] bg-[#01f2a604] border-r border-[#29282d]`}
       ></div>
       <div
         className={`${
           sideBar ? 'w-full' : 'w-0'
-        } fixed top-0 left-0 bg-black/30 backdrop-blur-lg  h-screen md:hidden transition-all duration-500 delay-100 z-[49] bg-[#01f2a604] border-r border-[#29282d]`}
+        } fixed top-0 left-0 bg-black/30 backdrop-blur-lg  h-screen md:hidden transition-all duration-500 delay-100 z-[49]  border-r border-[#29282d]`}
       ></div>
       <div
         className={`${
           sideBar ? 'w-full' : 'w-0'
-        } fixed top-0 left-0 bg-black/30 backdrop-blur-xl  h-screen md:hidden transition-all duration-500 delay-200 z-[49] bg-[#01f2a604] border-r border-[#29282d]`}
+        } fixed top-0 left-0  backdrop-blur-xl  h-screen md:hidden transition-all duration-500 delay-200 z-[49] bg-[#01f2a604] border-r border-[#29282d]`}
       ></div>
       <nav
         className={`
         ${
           sideBar
-            ? 'md:transition-none transition-all duration-500'
+            ? 'md:transition-none transition-all duration-700 '
             : 'opacity-0 -translate-x-full md:translate-x-0 md:opacity-100'
         }
         md:static md:h-fit md:bg-transparent md:border-0 md:w-fit md:p-0 flex 
-        fixed left-0 top-0 h-screen xs:w-fit p-10 pr-4  w-full backdrop-blur-3xl border-r border-[#29282D] bg-[#030a1274] z-50
+        fixed left-0 top-0 h-screen xs:w-fit p-10 px8  w-full backdrop-blur-3xl border-r border-[#29282D] bg-[#030a1274] z-50
         `}
       >
         <ul className='flex md:flex-row w-full flex-col gap-y-5 lg:gap-x-5 gap-x-3'>
@@ -122,7 +122,7 @@ export default function Header() {
           white paper
         </Button>
         <button
-          className='p-0.5 py-0 md:hidden flex  hover:bg-[#01f2a623] transition-all duration-500 rounded-lg text-5xl text-[#01F2A7]'
+          className='p-0.5 py-0 md:hidden flex  hover:bg-[#01f2a623] transition-all duration-500 rounded-lg xs:text-5xl text-3xl text-[#01F2A7]'
           onClick={() => setSideBar((prev) => !prev)}
         >
           <IoMenuSharp />
