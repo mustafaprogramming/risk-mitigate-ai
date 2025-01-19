@@ -69,7 +69,7 @@ export default function Hero() {
 export function SecondaryHero({ text, greenText, heading, bdgText }) {
   return (
     <section
-      className={`bg-[url('/HeroBackground.png')] bg-contain bg-no-repeat bg-bottom  flex flex-col text-center items-center gap-6 md:gap-10 py-12 md:py-16 lg:py-20 `}
+      className={`bg-[url('/HeroBackground.png')] bg-cover bg-no-repeat bg-bottom w-full flex flex-col text-center items-center gap-6 md:gap-10 py-12 md:py-16 lg:py-20 `}
     >
       {bdgText&&<span className='flex gap-2 items-center rounded-lg border michroma border-[#464646] py-1 ps-2.5 pe-3.5 w-fit uppercase text-sm '>
         <Image
